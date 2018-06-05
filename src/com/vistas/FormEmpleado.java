@@ -120,7 +120,7 @@ public class FormEmpleado extends javax.swing.JInternalFrame {
         }
         jTxtNit.setText("0101 - 010101 - 101 - 1");
 
-        jCmbDepartamento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione su cargo", "EquipoIT", "Finanzas", "Ventas", " " }));
+        jCmbDepartamento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione su cargo", "Equipo de IT", "Finanzas", "Ventas", " " }));
         jCmbDepartamento.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 jCmbDepartamentoItemStateChanged(evt);
@@ -332,7 +332,7 @@ public class FormEmpleado extends javax.swing.JInternalFrame {
     {
         String cargo[] = new String[2];
         
-        if(departamento.equalsIgnoreCase("EquipoIT"))
+        if(departamento.equalsIgnoreCase("Equipo de IT"))
         {
             cargo[0] = "Soporte Técnico";
             cargo[1] = "Desarrollador";
