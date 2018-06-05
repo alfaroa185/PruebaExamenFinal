@@ -303,8 +303,7 @@ public class FormEmpleado extends javax.swing.JInternalFrame {
         {
             cargo[0] = "Vendedor de Contratos";
             cargo[1] = "Gerente de Ventas";
-        }
-        
+        }        
         return cargo;
     }
     
