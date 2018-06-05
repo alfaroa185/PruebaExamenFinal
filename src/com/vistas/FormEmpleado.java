@@ -135,6 +135,12 @@ public class FormEmpleado extends javax.swing.JInternalFrame {
             }
         });
 
+        jTxtFecha.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTxtFechaKeyTyped(evt);
+            }
+        });
+
         btnEnviar.setText("Enviar");
         btnEnviar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -313,6 +319,14 @@ public class FormEmpleado extends javax.swing.JInternalFrame {
             evt.consume();
         }
     }//GEN-LAST:event_jTxtApellidoKeyTyped
+
+    private void jTxtFechaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTxtFechaKeyTyped
+        Character s = evt.getKeyChar();
+        if(!Character.isDigit(s))
+        {
+            evt.consume();
+        }
+    }//GEN-LAST:event_jTxtFechaKeyTyped
 
     public String[] llenarCargo(String departamento)
     {

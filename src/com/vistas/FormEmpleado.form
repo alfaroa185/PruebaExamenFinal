@@ -293,6 +293,9 @@
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtFecha">
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTxtFechaKeyTyped"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnEnviar">
       <Properties>
