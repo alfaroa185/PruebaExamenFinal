@@ -375,15 +375,15 @@ public class FormEmpleado extends javax.swing.JInternalFrame {
         
         if(this.jChMusica.isSelected())
         {
-            acu += this.jChMusica.getText() + "";
+            acu += this.jChMusica.getText() + ", ";
         }
         if(this.jChDeportes.isSelected())
         {
-            acu += this.jChDeportes.getText() + "";
+            acu += this.jChDeportes.getText() + ", ";
         }
         if(this.jChAutos.isSelected())
         {
-            acu += this.jChAutos.getText() + "";
+            acu += this.jChAutos.getText() + ".";
         }
         e.setIntereses(acu);
         
