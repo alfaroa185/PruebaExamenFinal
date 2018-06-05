@@ -215,8 +215,14 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtNombre">
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTxtNombreKeyTyped"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtApellido">
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTxtApellidoKeyTyped"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSpinner" name="jSEdad">
       <Properties>

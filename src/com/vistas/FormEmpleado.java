@@ -6,6 +6,7 @@
 package com.vistas;
 import com.clases.Empleado;
 import java.awt.event.ItemEvent;
+import java.awt.event.KeyEvent;
 import java.text.NumberFormat;
 import java.util.Locale;
 import javax.swing.DefaultComboBoxModel;
@@ -87,6 +88,18 @@ public class FormEmpleado extends javax.swing.JInternalFrame {
         jLabel10.setText("Salario:");
 
         jLabel11.setText("Año de Ingreso:");
+
+        jTxtNombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTxtNombreKeyTyped(evt);
+            }
+        });
+
+        jTxtApellido.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTxtApellidoKeyTyped(evt);
+            }
+        });
 
         jSEdad.setModel(new javax.swing.SpinnerNumberModel(18, 18, 60, 1));
 
@@ -284,6 +297,22 @@ public class FormEmpleado extends javax.swing.JInternalFrame {
            evt.consume();
        }
     }//GEN-LAST:event_jTxtSalarioKeyTyped
+
+    private void jTxtNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTxtNombreKeyTyped
+        Character s = evt.getKeyChar();
+        if(!Character.isLetter(s) && s != KeyEvent.VK_SPACE)
+        {
+            evt.consume();
+        }
+    }//GEN-LAST:event_jTxtNombreKeyTyped
+
+    private void jTxtApellidoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTxtApellidoKeyTyped
+        Character s = evt.getKeyChar();
+        if(!Character.isLetter(s) && s != KeyEvent.VK_SPACE)
+        {
+            evt.consume();
+        }
+    }//GEN-LAST:event_jTxtApellidoKeyTyped
 
     public String[] llenarCargo(String departamento)
     {
